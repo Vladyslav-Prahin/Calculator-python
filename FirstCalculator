@@ -1,0 +1,30 @@
+what = input("Co chcesz zrobić? (+, -, **, //, *, %, /): ")
+
+a = float(input("Wpisz liczbę: "))
+b = float(input("Wpisz liczbę: "))
+
+if what == "+":
+    c = a + b
+    print("Wynik: " + str(c))
+elif what == "-":
+    c = a - b
+    print("Wynik: " + str(c))
+elif what == "**":
+    c = a ** b
+    print("Wynik: " + str(c))
+elif what == "*":
+    c = a * b
+    print("Wynik: " + str(c))
+elif what == "//":
+    c = a // b
+    print("Wynik: " + str(c))
+elif what == "%":
+    c = a % b
+    print("Wynik: " + str(c))
+elif what == "/":
+    if (b == 0):
+        print("Cholero nie dziel przez zero")
+    else: 
+        print("Wynik: " + str(a / b))
+else:
+    print(Error)
